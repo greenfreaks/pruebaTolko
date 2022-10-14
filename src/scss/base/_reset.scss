@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 750px;
+    overflow-x: hidden;
+    background-image: url('../assets/img/background.png');
+}
+
+.bodyContent {
+    margin: 20px;
+}

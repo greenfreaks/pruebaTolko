@@ -1,0 +1,82 @@
+header {
+    .headerTitle {
+        display: flex;
+
+        .headerTitle__setu {
+            max-height: 220px;
+            translate: -50px -40px
+        }
+
+        .headerTitle__titulo {
+            margin-top: 50px;
+            max-height: 150px;
+        }
+    }
+}
+
+.mainText {
+    h1 {
+        font-size: 2em;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+.finalText {
+    h1 {
+        font-size: 3em;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    .card {
+        position: relative;
+        width: 260px;
+        height: 205px;
+        margin: 20px;
+
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            overflow: hidden;
+            transition: 1s;
+        }
+
+        .front{
+            transform: perspective(600px) rotateY(0deg);
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .back{
+            transform: perspective(600px) rotateY(180deg);
+
+            img{
+                max-width: 100%;
+            }
+        }
+
+        &:hover{
+            .front{
+                transform: perspective(600px) rotateY(180deg);
+            }
+        }
+
+        &:hover{
+            .back{
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+/*----------Text colors------------*/
+
+.whiteTx{
+    color: $white
+}
+/*----------Text effects------------*/
+.bolderTx{
+    font-weight: bolder;
+}
+.boldTx{
+    font-weight: bold;
+}
+.semiBoldTx{
+    font-weight: 400;
+}
+.lightTx{
+    font-weight: lighter;
+}
+
+/*----------Text aligns------------*/
+.cTx{
+    text-align: center;
+}
+.rTx{
+    text-align: right;
+}
+.lTx{
+    text-align: left;
+}
